@@ -2792,13 +2792,25 @@ input, select, textarea {
 		border-color: rgba(255, 255, 255, 0.35);
 	}
 
+
+	.job-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	  }
+	  
+	  .job-header span:last-child {
+		margin-left: auto;
+	  }
+
 /* Features */
 
-	.features {
+	/* .features {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		/* display: flex; 
+		display: block;
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
@@ -2807,16 +2819,19 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		width: calc(100% + 2em);
+		/* width: calc(100% + 2em); 
+		width: 100%;
 		margin: 0 0 3em -2em;
 		padding: 0;
 		list-style: none;
 	}
 
 		.features li {
-			width: calc(33.33333% - 2em);
+			/* width: calc(33.33333% - 2em); 
+			width: 100%;
 			margin-left: 2em;
 			margin-top: 3em;
+			margin-bottom: 2em;
 			padding: 0;
 		}
 
@@ -2826,9 +2841,9 @@ input, select, textarea {
 
 			.features li > :last-child {
 				margin-bottom: 0;
-			}
+			} */
 
-		@media screen and (max-width: 980px) {
+		/* @media screen and (max-width: 980px) {
 
 			.features li {
 				width: calc(50% - 2em);
@@ -2857,6 +2872,62 @@ input, select, textarea {
 						margin-top: 2em;
 					}
 
+		} */
+
+		/* Features */
+
+		.features {
+			display: block;
+			width: 100%;
+			margin: 0 0 1em 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.features li {
+			width: 100%;
+			margin: 0 0 1em 0;
+			padding: 0;
+		}
+
+		.features li > :last-child {
+			margin-bottom: 0;
+		}
+
+		.features li h3 {
+			margin-top: 0;
+			margin-bottom: 0.5em;
+		}
+
+		.features li h4 {
+			margin-top: 0;
+			margin-bottom: 0.2em;
+		}
+
+		.features li > ul {
+			padding-left: 1.5em;
+			margin-top: 0.1em;
+		}
+		
+		.features li > ul li {
+			font-size: 0.9em;
+			line-height: 1.4;
+			margin-bottom: 0.5em;
+		}
+
+
+		@media screen and (max-width: 736px) {
+			.features {
+				margin: 0 0 2em 0;
+			}
+		
+			.features li {
+				margin-top: 1.5em;
+			}
+		
+			.features li:first-child {
+				margin-top: 0;
+			}
 		}
 
 /* Statistics */
